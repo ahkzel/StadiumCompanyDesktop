@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\super\\source\\repos\\forms1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|c:\\users\\super\\source\\repos\\forms1\\forms1\\models\\connectiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|solutionrelative:forms1\\models\\connectiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|c:\\users\\super\\source\\repos\\forms1\\forms1\\vues\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|solutionrelative:forms1\\vues\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|c:\\users\\super\\source\\repos\\forms1\\forms1\\vues\\loginusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|solutionrelative:forms1\\vues\\loginusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|c:\\users\\super\\source\\repos\\forms1\\forms1\\vues\\edit_quizz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|solutionrelative:forms1\\vues\\edit_quizz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|C:\\Users\\super\\source\\repos\\forms1\\forms1\\vues\\edit_quizz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|solutionrelative:forms1\\vues\\edit_quizz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|c:\\users\\super\\source\\repos\\forms1\\forms1\\vues\\quizzes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|solutionrelative:forms1\\vues\\quizzes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|c:\\users\\super\\source\\repos\\forms1\\forms1\\models\\connectiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|solutionrelative:forms1\\models\\connectiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|C:\\Users\\super\\source\\repos\\forms1\\forms1\\vues\\edit_quizz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|solutionrelative:forms1\\vues\\edit_quizz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|c:\\users\\super\\source\\repos\\forms1\\forms1\\models\\verifie_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,10 +63,6 @@
       "RelativeMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|solutionrelative:forms1\\models\\type_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|c:\\users\\super\\source\\repos\\forms1\\forms1\\vues\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|solutionrelative:forms1\\vues\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|c:\\users\\super\\source\\repos\\forms1\\forms1\\controllers\\quizz_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|solutionrelative:forms1\\controllers\\quizz_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -81,10 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|C:\\Users\\super\\source\\repos\\forms1\\forms1\\vues\\edit_question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|solutionrelative:forms1\\vues\\edit_question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|c:\\users\\super\\source\\repos\\forms1\\forms1\\vues\\loginusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|solutionrelative:forms1\\vues\\loginusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C395B9A0-E392-4BAA-A692-5C7676934628}|forms1\\forms1.csproj|c:\\users\\super\\source\\repos\\forms1\\forms1\\vues\\edit_question.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -110,7 +110,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Edit_question.cs",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\vues\\Edit_question.cs",
               "RelativeDocumentMoniker": "forms1\\vues\\Edit_question.cs",
@@ -131,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "connectiondb.cs",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\models\\connectiondb.cs",
               "RelativeDocumentMoniker": "forms1\\models\\connectiondb.cs",
@@ -144,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "quizz_model.cs",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\models\\quizz_model.cs",
               "RelativeDocumentMoniker": "forms1\\models\\quizz_model.cs",
@@ -156,20 +156,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Edit_quizz.cs",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\vues\\Edit_quizz.cs",
               "RelativeDocumentMoniker": "forms1\\vues\\Edit_quizz.cs",
               "ToolTip": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\vues\\Edit_quizz.cs",
               "RelativeToolTip": "forms1\\vues\\Edit_quizz.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwB0AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAcwA0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-16T10:00:09.524Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "answer_model.cs",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\models\\answer_model.cs",
               "RelativeDocumentMoniker": "forms1\\models\\answer_model.cs",
@@ -181,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "question_model.cs",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\models\\question_model.cs",
               "RelativeDocumentMoniker": "forms1\\models\\question_model.cs",
@@ -193,15 +193,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\vues\\Login.cs",
               "RelativeDocumentMoniker": "forms1\\vues\\Login.cs",
               "ToolTip": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\vues\\Login.cs",
               "RelativeToolTip": "forms1\\vues\\Login.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwAwAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwC8AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T09:54:12.659Z"
+              "WhenOpened": "2026-02-16T09:54:12.659Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -211,14 +212,14 @@
               "RelativeDocumentMoniker": "forms1\\vues\\Quizzes.cs",
               "ToolTip": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\vues\\Quizzes.cs",
               "RelativeToolTip": "forms1\\vues\\Quizzes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowA4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-09T15:41:19.702Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "answer_controller.cs",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\controllers\\answer_controller.cs",
               "RelativeDocumentMoniker": "forms1\\controllers\\answer_controller.cs",
@@ -230,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "quizz_controller.cs",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\controllers\\quizz_controller.cs",
               "RelativeDocumentMoniker": "forms1\\controllers\\quizz_controller.cs",
@@ -242,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "contains_model.cs",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\models\\contains_model.cs",
               "RelativeDocumentMoniker": "forms1\\models\\contains_model.cs",
@@ -254,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "question_controller.cs",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\controllers\\question_controller.cs",
               "RelativeDocumentMoniker": "forms1\\controllers\\question_controller.cs",
@@ -266,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "user_model.cs",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\models\\user_model.cs",
               "RelativeDocumentMoniker": "forms1\\models\\user_model.cs",
@@ -278,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "main_controller.cs",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\controllers\\main_controller.cs",
               "RelativeDocumentMoniker": "forms1\\controllers\\main_controller.cs",
@@ -290,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "theme_model.cs",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\models\\theme_model.cs",
               "RelativeDocumentMoniker": "forms1\\models\\theme_model.cs",
@@ -302,19 +303,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 1,
               "Title": "LoginUserControl.cs",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\vues\\LoginUserControl.cs",
               "RelativeDocumentMoniker": "forms1\\vues\\LoginUserControl.cs",
               "ToolTip": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\vues\\LoginUserControl.cs",
               "RelativeToolTip": "forms1\\vues\\LoginUserControl.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T23:08:54.12Z"
+              "WhenOpened": "2026-02-22T23:08:54.12Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "verifie_model.cs",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\models\\verifie_model.cs",
               "RelativeDocumentMoniker": "forms1\\models\\verifie_model.cs",
@@ -350,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "type_model.cs",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\models\\type_model.cs",
               "RelativeDocumentMoniker": "forms1\\models\\type_model.cs",
@@ -374,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Quizzes.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\vues\\Quizzes.cs",
               "RelativeDocumentMoniker": "forms1\\vues\\Quizzes.cs",
@@ -385,7 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Edit_quizz.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\vues\\Edit_quizz.cs",
               "RelativeDocumentMoniker": "forms1\\vues\\Edit_quizz.cs",
@@ -396,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Edit_question.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\vues\\Edit_question.cs",
               "RelativeDocumentMoniker": "forms1\\vues\\Edit_question.cs",
@@ -414,7 +416,8 @@
               "ToolTip": "C:\\Users\\super\\source\\repos\\forms1\\forms1\\vues\\Register.cs [Conception]",
               "RelativeToolTip": "forms1\\vues\\Register.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T00:34:46.683Z"
+              "WhenOpened": "2026-02-09T00:34:46.683Z",
+              "EditorCaption": " [Conception]"
             }
           ]
         }

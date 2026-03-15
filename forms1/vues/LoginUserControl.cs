@@ -24,7 +24,6 @@ namespace forms1
                 MessageBox.Show("Email ou mot de passe incorrect.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            MessageBox.Show("Bienvenue sur CACAVENTURE " + user[1] + " " + user[2] + " !", "Bienvenue", MessageBoxButtons.OK);
             var parent = this.FindForm() as Login;
             if (parent != null)
             {
