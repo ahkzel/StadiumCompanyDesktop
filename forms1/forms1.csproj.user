@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="vues\Edit_question.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="vues\Edit_quizz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="vues\Quizzes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="vues\DGV_produits.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="vues\LoginUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="vues\Register.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="vues\Troll_window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vues\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
