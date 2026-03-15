@@ -36,3 +36,4 @@ C:\Users\super\source\repos\forms1\forms1\obj\Debug\net8.0-windows\forms1.LoginU
 C:\Users\super\source\repos\forms1\forms1\obj\Debug\net8.0-windows\forms1.Quizzes.resources
 C:\Users\super\source\repos\forms1\forms1\obj\Debug\net8.0-windows\forms1.Edit_quizz.resources
 C:\Users\super\source\repos\forms1\forms1\obj\Debug\net8.0-windows\forms1.Edit_question.resources
+C:\Users\super\source\repos\forms1\forms1\obj\Debug\net8.0-windows\forms1.sourcelink.json

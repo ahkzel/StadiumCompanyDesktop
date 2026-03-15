@@ -37,7 +37,6 @@ namespace forms1
                 MessageBox.Show("Email ou mot de passe incorrect.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            MessageBox.Show("Bienvenue sur CACAVENTURE " + user[0] + " " + user[1] + " !", "Bienvenue", MessageBoxButtons.OK);
             load_page(new Quizzes(main_controller, tb_email.Text));
         }
 
