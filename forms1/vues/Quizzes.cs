@@ -36,7 +36,10 @@ namespace forms1
             quizzs = new List<Abstract_quizzes>();
             foreach (var quizz in Quizzs)
             {
-                quizzs.Add(new Abstract_quizzes { Name = quizz[0], Nb_questions = int.Parse(quizz[1]), Theme = quizz[2] });
+                if (quizz.Count >= 3 && int.TryParse(quizz[1], out int nb))
+                {
+                    quizzs.Add(new Abstract_quizzes { Name = quizz[0], Nb_questions = nb, Theme = quizz[2] });
+                }
             }
         }
 
