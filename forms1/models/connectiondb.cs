@@ -1,6 +1,7 @@
 ﻿using System;
 using MySql.Data;
 using MySql.Data.MySqlClient;
+using Microsoft.Extensions.Configuration;
 namespace connection_db
 {
     public class DBConnection
@@ -12,9 +13,9 @@ namespace connection_db
 
         public DBConnection()
         {
-            server = "localhost";
+            server = "";
             db_name = "";
-            uid = "root";
+            uid = "";
             password = "";
         }
 
@@ -33,9 +34,11 @@ namespace connection_db
         {
             if (Connection == null)
             {
-                if (String.IsNullOrEmpty(Db_name))
-                    return false;
-                string connstring = string.Format("Server={0}; database={1}; UID={2}; password={3};", Server, Db_name, Uid, Password);
+                var config = new ConfigurationBuilder()
+                    .AddJsonFile("appsettings.json")
+                    .Build();
+
+                string connstring = string.Format("Server={0}; Port={1}; database={2}; UID={3}; password={4};", config["Database:Server"], config["Database:Port"], config["Database:DbName"], config["Database:Uid"], config["Database:Password"]);
                 Connection = new MySqlConnection(connstring);
                 Connection.Open();
             }

@@ -37,3 +37,15 @@ C:\Users\super\source\repos\forms1\forms1\obj\Debug\net8.0-windows\forms1.Quizze
 C:\Users\super\source\repos\forms1\forms1\obj\Debug\net8.0-windows\forms1.Edit_quizz.resources
 C:\Users\super\source\repos\forms1\forms1\obj\Debug\net8.0-windows\forms1.Edit_question.resources
 C:\Users\super\source\repos\forms1\forms1\obj\Debug\net8.0-windows\forms1.sourcelink.json
+C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\appsettings.json
