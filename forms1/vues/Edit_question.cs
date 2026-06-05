@@ -20,8 +20,9 @@ namespace forms1
         private string name_quizz;
         private int id_quizz;
         private string email_user;
+        private string parent_key;
 
-        public Edit_question(Main_controller Main_controller, string Name_question, string Name_quizz, int Id_quizz, string Email_user)
+        public Edit_question(Main_controller Main_controller, string Name_question, string Name_quizz, int Id_quizz, string Email_user, string Parent_key)
         {
             InitializeComponent();
             main_controller = Main_controller;
@@ -29,6 +30,7 @@ namespace forms1
             name_quizz = Name_quizz;
             id_quizz = Id_quizz;
             email_user = Email_user;
+            parent_key = Parent_key;
             if (name_question == "")
             {
                 answers_list = new List<string>();
@@ -40,14 +42,14 @@ namespace forms1
 
             create_answers();
             populate_cb_type();
-            string existing_type = main_controller.Question_controller.get_type_from_question_quizz(name_question, id_quizz); 
-            if (existing_type == "binaire") 
-            { 
-                cb_type.SelectedItem = "vrai/faux"; 
-            } 
-            else if (existing_type == "multiple") 
-            { 
-                cb_type.SelectedItem = "choix multiple"; 
+            string existing_type = main_controller.Question_controller.get_type_from_question_quizz(name_question, id_quizz);
+            if (existing_type == "binaire")
+            {
+                cb_type.SelectedItem = "vrai/faux";
+            }
+            else if (existing_type == "multiple")
+            {
+                cb_type.SelectedItem = "choix multiple";
             }
             populate_cb_answers();
             populate_cb_right_answer(answers_list);
@@ -167,10 +169,10 @@ namespace forms1
 
         private void bt_add_answer_Click(object sender, EventArgs e)
         {
-            if (cb_answers.SelectedItem == null) 
-            { 
-                MessageBox.Show("Veuillez sélectionner une réponse à ajouter."); 
-                return; 
+            if (cb_answers.SelectedItem == null)
+            {
+                MessageBox.Show("Veuillez sélectionner une réponse à ajouter.");
+                return;
             }
             string selected_answer = cb_answers.SelectedItem.ToString();
             if (!answers_list.Contains(selected_answer))
@@ -228,6 +230,12 @@ namespace forms1
                 parent.load_page(new Edit_quizz(main_controller, name_quizz, theme_quizz, id_quizz, email_user));
             }
             return;
+        }
+
+        private void bt_return_Click(object sender, EventArgs e)
+        {
+            var parent = this.FindForm() as Login;
+            parent.navigation_controller.navigate(parent_key);
         }
     }
 }

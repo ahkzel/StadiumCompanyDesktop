@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Mysqlx.Expect.Open.Types.Condition.Types;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace forms1
 {
@@ -81,7 +83,14 @@ namespace forms1
             var parent = this.FindForm() as Login;
             if (parent != null)
             {
-                parent.load_page(new Edit_question(main_controller, "", name_quizz, id_quizz, email_user));
+                string parent_key = "edit_quizz_" + id_quizz.ToString();
+                string key = "edit_question_" + id_quizz.ToString() + "_new";
+                if (!parent.navigation_controller.exists(key))
+                {
+                    var edit_question_page = new Edit_question(main_controller, "", name_quizz, id_quizz, email_user, parent_key);
+                    parent.navigation_controller.register_page(key, edit_question_page);
+                }
+                parent.navigation_controller.navigate(key);
             }
         }
 
@@ -91,7 +100,14 @@ namespace forms1
             var parent = this.FindForm() as Login;
             if (parent != null)
             {
-                parent.load_page(new Edit_question(main_controller, question_name.ToString(), name_quizz, id_quizz, email_user));
+                string parent_key = "edit_quizz_" + id_quizz.ToString();
+                string key = "edit_question_" + id_quizz.ToString() + "_" + question_name.ToString();
+                if (!parent.navigation_controller.exists(key))
+                {
+                    var edit_question_page = new Edit_question(main_controller, question_name.ToString(), name_quizz, id_quizz, email_user, parent_key);
+                    parent.navigation_controller.register_page(key, edit_question_page);
+                }
+                parent.navigation_controller.navigate(key);
             }
         }
 
@@ -169,6 +185,12 @@ namespace forms1
                 }
                 refresh_questions();
             }
+        }
+
+        private void bt_return_Click(object sender, EventArgs e)
+        {
+            var parent = this.FindForm() as Login;
+            parent.navigation_controller.navigate("quizzes");
         }
     }
 }

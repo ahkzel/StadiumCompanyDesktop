@@ -41,42 +41,45 @@
             // 
             // tb_password
             // 
-            tb_password.Location = new Point(374, 239);
+            tb_password.Location = new Point(321, 190);
+            tb_password.Margin = new Padding(3, 2, 3, 2);
             tb_password.Name = "tb_password";
             tb_password.PasswordChar = '*';
-            tb_password.Size = new Size(180, 27);
+            tb_password.Size = new Size(158, 23);
             tb_password.TabIndex = 12;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(264, 239);
+            label1.Location = new Point(225, 190);
             label1.Name = "label1";
-            label1.Size = new Size(105, 20);
+            label1.Size = new Size(83, 15);
             label1.TabIndex = 11;
             label1.Text = "Mot de passe :";
             // 
             // tb_email
             // 
-            tb_email.Location = new Point(374, 201);
+            tb_email.Location = new Point(321, 162);
+            tb_email.Margin = new Padding(3, 2, 3, 2);
             tb_email.Name = "tb_email";
-            tb_email.Size = new Size(181, 27);
+            tb_email.Size = new Size(159, 23);
             tb_email.TabIndex = 10;
             // 
             // lb_email
             // 
             lb_email.AutoSize = true;
-            lb_email.Location = new Point(317, 201);
+            lb_email.Location = new Point(271, 162);
             lb_email.Name = "lb_email";
-            lb_email.Size = new Size(53, 20);
+            lb_email.Size = new Size(42, 15);
             lb_email.TabIndex = 9;
             lb_email.Text = "Email :";
             // 
             // btn_login
             // 
-            btn_login.Location = new Point(401, 283);
+            btn_login.Location = new Point(345, 223);
+            btn_login.Margin = new Padding(3, 2, 3, 2);
             btn_login.Name = "btn_login";
-            btn_login.Size = new Size(126, 33);
+            btn_login.Size = new Size(110, 25);
             btn_login.TabIndex = 13;
             btn_login.Text = "Connexion";
             btn_login.UseVisualStyleBackColor = true;
@@ -84,9 +87,10 @@
             // 
             // btn_to_register
             // 
-            btn_to_register.Location = new Point(387, 385);
+            btn_to_register.Location = new Point(333, 300);
+            btn_to_register.Margin = new Padding(3, 2, 3, 2);
             btn_to_register.Name = "btn_to_register";
-            btn_to_register.Size = new Size(126, 33);
+            btn_to_register.Size = new Size(110, 25);
             btn_to_register.TabIndex = 14;
             btn_to_register.Text = "créer un compte";
             btn_to_register.UseVisualStyleBackColor = true;
@@ -95,9 +99,9 @@
             // lb_to_register
             // 
             lb_to_register.AutoSize = true;
-            lb_to_register.Location = new Point(349, 353);
+            lb_to_register.Location = new Point(299, 276);
             lb_to_register.Name = "lb_to_register";
-            lb_to_register.Size = new Size(206, 20);
+            lb_to_register.Size = new Size(163, 15);
             lb_to_register.TabIndex = 15;
             lb_to_register.Text = "Vous n'avez pas de compte ? :";
             // 
@@ -111,17 +115,17 @@
             panel1.Controls.Add(tb_email);
             panel1.Controls.Add(lb_email);
             panel1.Location = new Point(-2, -1);
-            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(888, 636);
+            panel1.Size = new Size(777, 477);
             panel1.TabIndex = 16;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(883, 633);
+            ClientSize = new Size(775, 475);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Login";
             Text = "Login";
             panel1.ResumeLayout(false);

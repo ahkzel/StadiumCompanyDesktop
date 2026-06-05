@@ -10,17 +10,11 @@
     <Compile Update="vues\Quizzes.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="vues\DGV_produits.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="vues\LoginUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="vues\Register.cs">
       <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="vues\Troll_window.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Update="vues\Login.cs">
       <SubType>Form</SubType>

@@ -13,8 +13,6 @@ namespace forms1
         public Init()
         {
             db_con = new DBConnection();
-            db_con.Password = "FrouFrou";
-            db_con.Db_name = "ppe";
             db_con.IsConnect();
             conn = db_con.Connection;
             main_controller = new Main_controller(conn);

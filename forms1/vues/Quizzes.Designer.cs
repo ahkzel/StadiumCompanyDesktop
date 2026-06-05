@@ -34,15 +34,19 @@
             modifierToolStripMenuItem = new ToolStripMenuItem();
             ajouterToolStripMenuItem = new ToolStripMenuItem();
             supprimToolStripMenuItem = new ToolStripMenuItem();
+            lb_all_quizz = new Label();
             ((System.ComponentModel.ISupportInitialize)dgv_quizzes).BeginInit();
             cms_questionnaire.SuspendLayout();
             SuspendLayout();
             // 
             // dgv_quizzes
             // 
+            dgv_quizzes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgv_quizzes.BackgroundColor = SystemColors.ControlLight;
+            dgv_quizzes.BorderStyle = BorderStyle.None;
             dgv_quizzes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgv_quizzes.ContextMenuStrip = cms_questionnaire;
-            dgv_quizzes.Location = new Point(31, 90);
+            dgv_quizzes.Location = new Point(30, 88);
             dgv_quizzes.Margin = new Padding(3, 2, 3, 2);
             dgv_quizzes.MinimumSize = new Size(714, 366);
             dgv_quizzes.Name = "dgv_quizzes";
@@ -77,10 +81,21 @@
             supprimToolStripMenuItem.Text = "Supprimer";
             supprimToolStripMenuItem.Click += supprimToolStripMenuItem_Click;
             // 
+            // lb_all_quizz
+            // 
+            lb_all_quizz.AutoSize = true;
+            lb_all_quizz.Font = new Font("Segoe UI", 10F);
+            lb_all_quizz.Location = new Point(41, 47);
+            lb_all_quizz.Name = "lb_all_quizz";
+            lb_all_quizz.Size = new Size(229, 19);
+            lb_all_quizz.TabIndex = 12;
+            lb_all_quizz.Text = "Tous les questionnaires disponibles :";
+            // 
             // Quizzes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(lb_all_quizz);
             Controls.Add(dgv_quizzes);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Quizzes";
@@ -88,6 +103,7 @@
             ((System.ComponentModel.ISupportInitialize)dgv_quizzes).EndInit();
             cms_questionnaire.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -97,5 +113,6 @@
         private ToolStripMenuItem modifierToolStripMenuItem;
         private ToolStripMenuItem ajouterToolStripMenuItem;
         private ToolStripMenuItem supprimToolStripMenuItem;
+        private Label lb_all_quizz;
     }
 }

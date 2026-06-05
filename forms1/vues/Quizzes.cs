@@ -57,23 +57,31 @@ namespace forms1
                 var name = dgv_quizzes.CurrentRow.Cells["Name"].Value;
                 var theme = dgv_quizzes.CurrentRow.Cells["Theme"].Value;
                 int id_quizz = main_controller.Quizz_controller.get_id_quizz_from_name(name.ToString());
+
                 var parent = this.FindForm() as Login;
-                if (parent != null)
+                string key = "edit_quizz_" + id_quizz.ToString();
+                if (!parent.navigation_controller.exists(key))
                 {
-                    parent.load_page(new Edit_quizz(main_controller, name.ToString(), theme.ToString(), id_quizz, email_user));
+                    var edit_quizz_page = new Edit_quizz(main_controller, name.ToString(), theme.ToString(), id_quizz, email_user);
+                    parent.navigation_controller.register_page(key, edit_quizz_page);
                 }
+                parent.navigation_controller.navigate(key);
             }
         }
 
         private void ajouterToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var parent = this.FindForm() as Login;
             main_controller.Quizz_controller.create_quizz_without_questions("l", email_user);
             int id_quizz = main_controller.Quizz_controller.get_latest_quizz_id();
-            if (parent != null)
+
+            var parent = this.FindForm() as Login;
+            string key = "edit_quizz_" + id_quizz.ToString();
+            if (!parent.navigation_controller.exists(key))
             {
-                parent.load_page(new Edit_quizz(main_controller, "", "", id_quizz, email_user));
+                var edit_quizz_page = new Edit_quizz(main_controller, "", "", id_quizz, email_user);
+                parent.navigation_controller.register_page(key, edit_quizz_page);
             }
+            parent.navigation_controller.navigate(key);
         }
 
         private void supprimToolStripMenuItem_Click(object sender, EventArgs e)

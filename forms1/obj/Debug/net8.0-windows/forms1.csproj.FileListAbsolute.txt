@@ -30,8 +30,6 @@ C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\runtimes\win-
 C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\super\source\repos\forms1\forms1\obj\Debug\net8.0-windows\forms1.csproj.AssemblyReference.cache
 C:\Users\super\source\repos\forms1\forms1\obj\Debug\net8.0-windows\forms1.csproj.Up2Date
-C:\Users\super\source\repos\forms1\forms1\obj\Debug\net8.0-windows\forms1.DGV_produits.resources
-C:\Users\super\source\repos\forms1\forms1\obj\Debug\net8.0-windows\forms1.Troll_window.resources
 C:\Users\super\source\repos\forms1\forms1\obj\Debug\net8.0-windows\forms1.LoginUserControl.resources
 C:\Users\super\source\repos\forms1\forms1\obj\Debug\net8.0-windows\forms1.Quizzes.resources
 C:\Users\super\source\repos\forms1\forms1\obj\Debug\net8.0-windows\forms1.Edit_quizz.resources
@@ -48,3 +46,4 @@ C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\Microsoft.Ext
 C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
 C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\System.Text.Json.dll
 C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\super\source\repos\forms1\forms1\bin\Debug\net8.0-windows\appsettings.json

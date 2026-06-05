@@ -13,12 +13,14 @@ namespace forms1
     public partial class Login : Form
     {
         private Main_controller main_controller;
+        public Navigation_controller navigation_controller;
 
         public Login()
         {
             Init init = new Init();
             main_controller = init.Main_controller;
             InitializeComponent();
+            navigation_controller = new Navigation_controller(panel1);
         }
 
         public Main_controller Main_controller
@@ -33,10 +35,16 @@ namespace forms1
         {
             List<string> user = main_controller.User_controller.get_user(tb_email.Text, tb_password.Text);
             if (user == null || user.Count < 2)
-            { 
+            {
                 MessageBox.Show("Email ou mot de passe incorrect.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
+            var quizzes_page = new Quizzes(main_controller, tb_email.Text);
+            navigation_controller.register_page("quizzes", quizzes_page);
+
+            navigation_controller.navigate("quizzes");
+
             load_page(new Quizzes(main_controller, tb_email.Text));
         }
 
