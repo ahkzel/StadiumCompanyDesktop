@@ -1,12 +1,7 @@
 ﻿using forms1.controllers;
+using PdfSharp.Pdf;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
@@ -97,6 +92,13 @@ namespace forms1
                     refresh_quizzes();
                 }
             }
+        }
+
+        private void générerUnPdfToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var name = dgv_quizzes.CurrentRow.Cells["Name"].Value;
+            var theme = dgv_quizzes.CurrentRow.Cells["Theme"].Value;
+            main_controller.generate_pdf(name.ToString(), theme.ToString());
         }
     }
 }

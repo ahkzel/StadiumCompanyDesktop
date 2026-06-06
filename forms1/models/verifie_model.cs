@@ -16,6 +16,25 @@ namespace forms1.models
             conn = Conn;
         }
 
+
+        public int get_weight_from_question_id(int id_question)
+        {
+            string query = "SELECT DISTINCT poids FROM verifie INNER JOIN question ON verifie.id_question = question.id WHERE " +
+                "question.id = @id_question";
+            using (var cmd = new MySqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@id_question", id_question);
+                using (var reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return reader.GetInt32("poids");
+                    }
+                }
+            }
+            return 0;
+        }
+
         public void delete_verifie_from_question_quizz(int id_question, int id_quizz)
         {
             string query = "DELETE verifie FROM verifie INNER JOIN reponses ON verifie.id_reponse = reponses.id INNER JOIN " +

@@ -14,6 +14,7 @@ namespace forms1.controllers
         private MySqlConnection conn;
         private Question_model question_model;
         private Contains_model contains_model;
+        private Verifie_model verify_model;
         private Type_model type_model;
 
         public Question_controller(MySqlConnection Conn)
@@ -21,6 +22,7 @@ namespace forms1.controllers
             conn = Conn;
             question_model = new Question_model(conn);
             contains_model = new Contains_model(conn);
+            verify_model = new Verifie_model(conn);
             type_model = new Type_model(conn);
         }
 
@@ -34,6 +36,10 @@ namespace forms1.controllers
         public Type_model Type_model
         { get { return type_model; } set { type_model = value; } }
 
+        public Verifie_model Verify_model
+        { get { return verify_model; } set { verify_model = value; } }
+
+
         public List<List<string>> get_all_questions_from_quizz(int id_quizz)
         {
             List<List<string>> base_questions = question_model.get_all_questions_from_quizz(id_quizz);
@@ -42,7 +48,9 @@ namespace forms1.controllers
             {
                 string type_name = type_model.get_type_from_id(int.Parse(question[1]));
                 int num_question = contains_model.get_question_index_from_quizz_question(id_quizz, question[0]);
-                ret.Add(new List<string> { num_question.ToString(), question[0], type_name });
+                int id_question = question_model.get_id_from_name(question[0]);
+                int weight_question = verify_model.get_weight_from_question_id(id_question);
+                ret.Add(new List<string> { num_question.ToString(), question[0], type_name, weight_question.ToString() });
             }
             return ret;
         }

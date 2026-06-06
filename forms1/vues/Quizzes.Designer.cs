@@ -35,6 +35,7 @@
             ajouterToolStripMenuItem = new ToolStripMenuItem();
             supprimToolStripMenuItem = new ToolStripMenuItem();
             lb_all_quizz = new Label();
+            générerUnPdfToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)dgv_quizzes).BeginInit();
             cms_questionnaire.SuspendLayout();
             SuspendLayout();
@@ -56,28 +57,28 @@
             // 
             // cms_questionnaire
             // 
-            cms_questionnaire.Items.AddRange(new ToolStripItem[] { modifierToolStripMenuItem, ajouterToolStripMenuItem, supprimToolStripMenuItem });
+            cms_questionnaire.Items.AddRange(new ToolStripItem[] { modifierToolStripMenuItem, ajouterToolStripMenuItem, supprimToolStripMenuItem, générerUnPdfToolStripMenuItem });
             cms_questionnaire.Name = "cms_questionnaire";
-            cms_questionnaire.Size = new Size(130, 70);
+            cms_questionnaire.Size = new Size(181, 114);
             // 
             // modifierToolStripMenuItem
             // 
             modifierToolStripMenuItem.Name = "modifierToolStripMenuItem";
-            modifierToolStripMenuItem.Size = new Size(129, 22);
+            modifierToolStripMenuItem.Size = new Size(180, 22);
             modifierToolStripMenuItem.Text = "Modifier";
             modifierToolStripMenuItem.Click += modifierToolStripMenuItem_Click;
             // 
             // ajouterToolStripMenuItem
             // 
             ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            ajouterToolStripMenuItem.Size = new Size(129, 22);
+            ajouterToolStripMenuItem.Size = new Size(180, 22);
             ajouterToolStripMenuItem.Text = "Ajouter";
             ajouterToolStripMenuItem.Click += ajouterToolStripMenuItem_Click;
             // 
             // supprimToolStripMenuItem
             // 
             supprimToolStripMenuItem.Name = "supprimToolStripMenuItem";
-            supprimToolStripMenuItem.Size = new Size(129, 22);
+            supprimToolStripMenuItem.Size = new Size(180, 22);
             supprimToolStripMenuItem.Text = "Supprimer";
             supprimToolStripMenuItem.Click += supprimToolStripMenuItem_Click;
             // 
@@ -90,6 +91,13 @@
             lb_all_quizz.Size = new Size(229, 19);
             lb_all_quizz.TabIndex = 12;
             lb_all_quizz.Text = "Tous les questionnaires disponibles :";
+            // 
+            // générerUnPdfToolStripMenuItem
+            // 
+            générerUnPdfToolStripMenuItem.Name = "générerUnPdfToolStripMenuItem";
+            générerUnPdfToolStripMenuItem.Size = new Size(180, 22);
+            générerUnPdfToolStripMenuItem.Text = "Générer un pdf";
+            générerUnPdfToolStripMenuItem.Click += générerUnPdfToolStripMenuItem_Click;
             // 
             // Quizzes
             // 
@@ -114,5 +122,6 @@
         private ToolStripMenuItem ajouterToolStripMenuItem;
         private ToolStripMenuItem supprimToolStripMenuItem;
         private Label lb_all_quizz;
+        private ToolStripMenuItem générerUnPdfToolStripMenuItem;
     }
 }

@@ -102,27 +102,6 @@ namespace forms1.models
             }
         }
 
-        public int get_id_quizz_from_name(string name)
-        {
-            string query = "SELECT id FROM questionnaire WHERE nom = @name";
-            using (var cmd = new MySqlCommand(query, conn))
-            {
-                cmd.Parameters.AddWithValue("@name", name);
-                using (var reader = cmd.ExecuteReader())
-                {
-                    if (reader.Read())
-                    {
-                        int colId = reader.GetOrdinal("id");
-                        return reader.GetInt32(colId);
-                    }
-                    else
-                    {
-                        return -1;
-                    }
-                }
-            }
-        }
-
         public int get_latest_quizz_id()
         {
             string query = "SELECT id FROM questionnaire ORDER BY id DESC LIMIT 1";
