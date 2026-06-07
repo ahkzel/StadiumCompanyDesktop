@@ -72,5 +72,15 @@ namespace forms1.models
             }
             return -1;
         }
+
+        public int create_answer(string name_answer)
+        {
+            string query = "INSERT INTO reponses (valeur) VALUES (@name_answer)";
+            using (var cmd = new MySqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@name_answer", name_answer);
+                return cmd.ExecuteNonQuery();
+            }
+        }
     }
 }

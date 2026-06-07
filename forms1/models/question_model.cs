@@ -19,20 +19,22 @@ namespace forms1.models
 
         public List<List<string>> get_all_questions_from_quizz(int id_quizz)
         {
-            string query = "SELECT question.label, question.id_type FROM question INNER JOIN comporte " +
+            string query = "SELECT comporte.num_question, question.label, question.id_type FROM question INNER JOIN comporte " +
                 "on question.id = comporte.id_question INNER JOIN questionnaire ON questionnaire.id = comporte.id_questionnaire" +
-                " WHERE questionnaire.id = @id_quizz";
+                " WHERE questionnaire.id = @id_quizz ORDER BY comporte.num_question ASC";
             using (var cmd = new MySqlCommand(query, conn))
             {
                 cmd.Parameters.AddWithValue("@id_quizz", id_quizz);
                 using (var reader = cmd.ExecuteReader())
                 {
                     List<List<string>> questions = new List<List<string>>();
+                    int colNum = reader.GetOrdinal("num_question");
                     int colLabel = reader.GetOrdinal("label");
                     int colId = reader.GetOrdinal("id_type");
                     while (reader.Read())
                     {
                         List<string> question = new List<string> {
+                            reader.GetInt32(colNum).ToString(),
                             reader.GetString(colLabel),
                             reader.GetInt32(colId).ToString() };
                         questions.Add(question);

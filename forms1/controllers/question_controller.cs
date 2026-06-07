@@ -46,11 +46,11 @@ namespace forms1.controllers
             List<List<string>> ret = new List<List<string>>();
             foreach (List<string> question in base_questions)
             {
-                string type_name = type_model.get_type_from_id(int.Parse(question[1]));
-                int num_question = contains_model.get_question_index_from_quizz_question(id_quizz, question[0]);
-                int id_question = question_model.get_id_from_name(question[0]);
+                string type_name = type_model.get_type_from_id(int.Parse(question[2]));
+                int num_question = contains_model.get_question_index_from_quizz_question(id_quizz, question[1]);
+                int id_question = question_model.get_id_from_name(question[1]);
                 int weight_question = verify_model.get_weight_from_question_id(id_question);
-                ret.Add(new List<string> { num_question.ToString(), question[0], type_name, weight_question.ToString() });
+                ret.Add(new List<string> { num_question.ToString(), question[1], type_name, weight_question.ToString() });
             }
             return ret;
         }

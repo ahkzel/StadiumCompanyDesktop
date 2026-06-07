@@ -87,13 +87,33 @@ namespace forms1.models
 
         public void update_num_question_from_quizz(int id_quizz)
         {
-            string query = "UPDATE comporte JOIN (SELECT id_question, ROW_NUMBER() OVER (ORDER BY num_question) AS rn FROM comporte WHERE " +
-                "id_questionnaire = @id_quizz) t USING (id_question) SET comporte.num_question = t.rn WHERE " +
-                "comporte.id_questionnaire = @id_quizz";
-            using (var cmd = new MySqlCommand(query, conn))
+            var ids = new List<int>();
+            string select = "SELECT id_question FROM comporte WHERE id_questionnaire = @id_quizz ORDER BY num_question";
+            using (var cmd = new MySqlCommand(select, conn))
             {
                 cmd.Parameters.AddWithValue("@id_quizz", id_quizz);
-                cmd.ExecuteNonQuery();
+                using (var rdr = cmd.ExecuteReader())
+                {
+                    while (rdr.Read()) ids.Add(rdr.GetInt32(0));
+                }
+            }
+
+            using (var tran = conn.BeginTransaction())
+            {
+                string update = "UPDATE comporte SET num_question = @num WHERE id_question = @id_question AND id_questionnaire = @id_quizz";
+                using (var cmd = new MySqlCommand(update, conn, tran))
+                {
+                    cmd.Parameters.Add("@num", MySqlDbType.Int32);
+                    cmd.Parameters.Add("@id_question", MySqlDbType.Int32);
+                    cmd.Parameters.AddWithValue("@id_quizz", id_quizz);
+                    for (int i = 0; i < ids.Count; i++)
+                    {
+                        cmd.Parameters["@num"].Value = i + 1;
+                        cmd.Parameters["@id_question"].Value = ids[i];
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                tran.Commit();
             }
         }
     }

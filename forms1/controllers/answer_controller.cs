@@ -76,5 +76,15 @@ namespace forms1.controllers
                 num_reponse++;
             }
         }
+        public int get_answer_id_from_name(string name_answer)
+        {
+            return answer_model.get_id_from_name(name_answer);
+        }
+
+        public int create_answer(string name_answer)
+        {
+            answer_model.create_answer(name_answer);
+            return answer_model.get_id_from_name(name_answer);
+        }
     }
 }

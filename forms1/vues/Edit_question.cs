@@ -21,6 +21,7 @@ namespace forms1
         private int id_quizz;
         private string email_user;
         private string parent_key;
+        private bool isInitializing = true;
 
         public Edit_question(Main_controller Main_controller, string Name_question, string Name_quizz, int Id_quizz, string Email_user, string Parent_key)
         {
@@ -31,6 +32,7 @@ namespace forms1
             id_quizz = Id_quizz;
             email_user = Email_user;
             parent_key = Parent_key;
+
             if (name_question == "")
             {
                 answers_list = new List<string>();
@@ -53,6 +55,7 @@ namespace forms1
             }
             populate_cb_answers();
             populate_cb_right_answer(answers_list);
+            isInitializing = false;
         }
 
         public void create_answers()
@@ -62,7 +65,7 @@ namespace forms1
             {
                 return;
             }
-            foreach (var answer_label in answers_list)
+            foreach (string answer_label in answers_list)
             {
                 answers.Add(new Abstract_answers { Name = answer_label });
             }
@@ -136,6 +139,7 @@ namespace forms1
 
         private void cb_type_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (isInitializing) return;
             if (cb_type.SelectedItem != null)
             {
                 string selected_type = cb_type.SelectedItem.ToString();
@@ -169,12 +173,18 @@ namespace forms1
 
         private void bt_add_answer_Click(object sender, EventArgs e)
         {
-            if (cb_answers.SelectedItem == null)
+            string selected_answer = cb_answers.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(selected_answer))
             {
-                MessageBox.Show("Veuillez sélectionner une réponse à ajouter.");
+                MessageBox.Show("Veuillez entrer une réponse.");
                 return;
             }
-            string selected_answer = cb_answers.SelectedItem.ToString();
+            int id_answer = main_controller.Answer_controller.get_answer_id_from_name(selected_answer);
+            if (id_answer == -1)
+            {
+                id_answer = main_controller.Answer_controller.create_answer(selected_answer);
+            }
             if (!answers_list.Contains(selected_answer))
             {
                 answers_list.Add(selected_answer);
@@ -187,7 +197,7 @@ namespace forms1
 
         private void bt_modify_Click(object sender, EventArgs e)
         {
-            if (cb_type.SelectedItem == null || (cb_type.SelectedItem.ToString() != "vrai/faux" && answers_list.Count == 0) || cb_right_answer.SelectedItem == null)
+            if (cb_type.SelectedItem == null || cb_right_answer.SelectedItem == null)
             {
                 MessageBox.Show("Tous les champs ne sont pas remplis. Il manque le type, les réponses ou la réponse correct à la question.");
                 return;
